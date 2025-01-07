@@ -1,4 +1,4 @@
---Q1
+--q1
 select 
 	distinct s.s_id,
 	AVG (s_score) as avg_score
@@ -13,7 +13,7 @@ group by s.s_id
 
 having AVG(r.s_score) >60
 
---Q2
+--q2
 select s.s_id, s_name
 from Student s
 left join Score r
@@ -25,7 +25,7 @@ on c.t_id = t.t_id
 
 where t_name = 'Chang San'
 
---Q3
+--q3
 SELECT DISTINCT 
     s1.s_id AS student_id,
     s1.s_name AS student_name
@@ -47,7 +47,7 @@ WHERE
     s2.s_id = '01'
     AND s1.s_id != '01';
 
---Q4
+--q4
 SELECT 
     c.c_id AS course_id,
     c.c_name AS course_name,
@@ -154,7 +154,7 @@ FROM
 WHERE 
     ranking = 1;
 
---q9
+--q8
 SELECT 
     r1.s_id AS student_id,
     r1.c_id AS course_id_1,
@@ -199,9 +199,9 @@ WHERE
 ORDER BY 
     course_id, ranking;
 
+--Q10
 SELECT 
 	*
-
 FROM 
     Student s
 WHERE 
